@@ -1,0 +1,37 @@
+
+快速入门
+
+How to write Go code：http://golang.org/doc/code.html
+A tour of Go：http://tour.golang.org/#1
+中文版：http://www.aqee.net/go/a-tour-of-go/#1
+初步学习
+An introduction to programming in GO: http://www.golang-book.com/（附件：gobook）
+酷壳陈皓整理的学习笔记：http://coolshell.cn/articles/8460.html，http://coolshell.cn/articles/8489.html
+学习go语言中文版：https://github.com/mikespook/Learning-Go-zh-cn（附件：学习go语言）
+进阶学习
+Effective GO：http://golang.org/doc/effective_go.html
+Programming in GO：英文电子版：http://it-ebooks.info/book/881/（附件：Programming in go）
+中文版介绍：http://book.douban.com/subject/24869910/ （附件：Go语言编程）
+随书代码地址：https://github.com/qiniu/gobook.git
+The way to go：英文电子版：https://sites.google.com/site/thewaytogo2012/（附件：the way to go）
+中文版介绍：http://www.ituring.com.cn/book/1205
+项目和社区
+GO语言项目地址：https://code.google.com/p/go/
+GO语言官网：http://golang.org/
+GO邮件列表(Google Group)：https://groups.google.com/forum/#!forum/golang-nuts
+GO中文社区：http://studygolang.com/
+GO资源汇总：https://github.com/wonderfo/wonderfogo/wiki
+FAQ
+linux下如何安装Golang？
+
+下载Golang官网提供的tarball，解压后配置GOROOT和添加bin即可。一般解压目录在/usr/local/go（如果在此目录可以不配置GOROOT）
+
+cd /usr/localtar -C /usr/local -xzf go1.2.1.linux-amd64.tar.gzecho "export PATH=$PATH:/usr/local/go/bin" >> /etc/profilesource /etc/profile
+如何配置VIM的Golang语法高亮？
+
+Golang自带了VIM语法高亮文件，只需要把$GOROOT/misc/vim/syntax/go.vim拷贝到 ~/.vim/syntax/ 和 ~/.vim/ftdetect/就行了
+
+mkdir ~/.vim/syntaxcp /usr/local/go/misc/vim/syntax/go.vim ~/.vim/syntax/mkdir ~/.vim/ftdetectcp /usr/local/go/misc/vim/syntax/go.vim ~/.vim/ftdetect/
+Golang有哪些比较好的编辑器和IDE？
+
+主流编辑器像Emacs、Vim、gedit等都可以通过插件扩展支持Golang，也有个专门用于go的IDE：liteIDE。主流IDE像Intellij、Eclipse也都有支持Go的插件。不过这里强烈推荐使用Sublime Text 3 + GoSublime插件作为IDE，由于Golang自带的命令行工具Gotools本身具备较强的IDE功能，且Golang良好的面向工程管理的设计本身也不需要太多补充，且GDB也可以支持Golang。
